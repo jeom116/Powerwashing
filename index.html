@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Jonas Interprice</title>
 </head>
 <body>
@@ -10,9 +11,9 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -23,35 +24,58 @@
             <p>Don't replace—just wash! Renew your siding, decks, and walkways, saving you money on costly exterior repairs.
 Our goal is to make you look at your house like it was the first time you saw it. With our experience of over 10 years, we assure you that your home will be looking great for the season to come. With a simple touch of a button, we can give you a free estimate for our services. </p>
             <button type ="button">Get a Free Quote Today!</button>
+            <!--Get this button to open up the Contact us form for the customer to fill out info-->
         </section>
 
-        <section>
+        <section id="services">
             <h2>Our Services</h2>
 
+            <div class="service">
             <h3>House Washing</h3>
-            <p>Your house will be cleaned, so it can get a fresh look that would give it it's sparkle back.</p>
+            <p>Your house will be cleaned, so it can get a fresh look that would give it its sparkle back.</p>
+        </div>
+
+            <div class="service">
             <h3>Deck/Patio Cleaning</h3>
             <p>We remove dirt, grime, and mildew to bring back the natural beauty of your outdoor experience.</p>
+            </div>
+
+            <div class="service">
             <h3>Driveway Cleaning</h3>
             <p>We thoroughly clean your driveway to remove dirt and algae, improving traction and safety while protecting your property from damage.</p>
+            </div>
         </section>
 
-        <section>
+        <section id="about">
             <h2>About Us</h2>
             <p>Jonas Interprice is a Family-owned business that has been serving our local communities for over 10 years. We are committed to providing the best and most reliable power washing services in the area. As a father and son team, we take pride in our work and ensuring that the customer is more than just satisfied with our services. Our company is built on Trust, customer service, and quality work, that has proven our results. We want to continue to grow and serve our community with pride and joy. </p>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>Contact Us</h2>
             <form action="">
-                <label for="Name">Name:</label>
-                <input type="text">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="Email">Email:</label>
-                <input type="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="Phone">Phone #:</label>
-                <input type="tel">
+                <label for="phone">Phone #:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+
+                <label for="job-select">Choose a job</label>
+                <select name="jobs" id="job-select">
+                    <option value="">--Please Choose a Service--</option>
+                    <option value="house cleaning">House Cleaning</option>
+                    <option value="deck/patio cleaning">Deck/Patio Cleaning</option>
+                    <option value="driveway cleaning">Driveway Cleaning</option>
+                </select>
+
+                <button type="submit">Submit</button>
+
 
             </form>
         </section>
