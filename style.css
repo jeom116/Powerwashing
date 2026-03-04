@@ -13,7 +13,14 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-around ;
+    justify-content: center;
+}
 
-
+nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
 }
