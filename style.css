@@ -24,3 +24,13 @@ nav ul{
     margin: 10px;
     list-style-type: none;
 }
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}  
+
+h2{
+    text-align: center;
+    
+}
