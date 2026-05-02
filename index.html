@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Jonas Interprice</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
             <h2>Our Mission</h2>
             <p>Don't replace—just wash! Renew your siding, decks, and walkways, saving you money on costly exterior repairs.
 Our goal is to make you look at your house like it was the first time you saw it. With our experience of over 10 years, we assure you that your home will be looking great for the season to come. With a simple touch of a button, we can give you a free estimate for our services. </p>
-            <button type ="button">Get a Free Quote Today!</button>
+            <button type="button" id="free-quote-btn" >Get a Free Quote Today!</button>
             <!--Get this button to open up the Contact us form for the customer to fill out info-->
         </section>
 
@@ -33,16 +34,19 @@ Our goal is to make you look at your house like it was the first time you saw it
             <h2>Our Services</h2>
 
             <div class="service">
+                    <img src="https://media.istockphoto.com/id/1461400300/photo/senior-man-up-on-ladder-diy-power-washing-house-siding.jpg?s=1024x1024&w=is&k=20&c=jgJwE3ZvxqUspD-IzkS5n4_yB6TS3I6iM7LN4C8uO8g=" alt="Dirty house being power washed cleaned" >
             <h3>House Washing</h3>
-            <p>Your house will be cleaned, so it can get a fresh look that would give it its sparkle back.</p>
+            <p>We restore your house's exterior to its original beauty with our professional power washing services.</p>
         </div>
 
             <div class="service">
+                <img src="https://www.tidewaterpainting.com/wp-content/uploads/2015/12/4272973_orig-e1451502208147.jpg" alt="A deck being cleaned" >
             <h3>Deck/Patio Cleaning</h3>
             <p>We remove dirt, grime, and mildew to bring back the natural beauty of your outdoor experience.</p>
             </div>
 
             <div class="service">
+                <img src="https://homebusinessmag.com/wp-content/uploads/2020/01/image1-e1580324834395.jpg" alt="Driveway before and after being cleaned ">
             <h3>Driveway Cleaning</h3>
             <p>We thoroughly clean your driveway to remove dirt and algae, improving traction and safety while protecting your property from damage.</p>
             </div>
@@ -55,7 +59,7 @@ Our goal is to make you look at your house like it was the first time you saw it
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <form action="">
+            <form action="" id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -69,7 +73,7 @@ Our goal is to make you look at your house like it was the first time you saw it
                 <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
 
                 <label for="job-select">Choose a job</label>
-                <select name="jobs" id="job-select">
+                <select name="jobs" id="job-select" required>
                     <option value="">--Please Choose a Service--</option>
                     <option value="house cleaning">House Cleaning</option>
                     <option value="deck/patio cleaning">Deck/Patio Cleaning</option>
